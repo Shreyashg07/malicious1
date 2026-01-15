@@ -7,7 +7,7 @@ stage('PyGuard Scan') {
           python:3.9-slim \
           bash -c "
             pip install sentence-transformers torch numpy scikit-learn pyyaml &&
-            python backend/ci-integrity/pyguard_embedding.py .
+            python ci-integrity/pyguard_embedding.py .
           "
         '''
     }
